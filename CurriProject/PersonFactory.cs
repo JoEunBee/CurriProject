@@ -20,7 +20,7 @@ namespace CurriProject
                 
                 // 컴퓨터 공학과 학생인 경우
                 if (instance.Major == "Computer")
-                {
+                {  
                     instance = new Person_Computer();
                 }
 
