@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CurriProject
 {
-    // 컴퓨터 공학부를 재학중인 학생 객체
-    class Person_Computer : Person
+    // 에러처리를 담당하는 클래스 
+    // static으로 작성 권장
+    class MyError
     {
-
     }
 }

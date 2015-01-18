@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CurriProject
 {
-    // 컴퓨터 공학부를 재학중인 학생 객체
-    class Person_Computer : Person
+    // 화면에 정보를 띄워주는 객체
+    class programView
     {
-
     }
 }

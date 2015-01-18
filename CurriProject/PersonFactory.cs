@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CurriProject
 {
-
+    // 입력한 Person정보에 맞게 형변환을 해주는 객체
     class PersonFactory
     {
         public static object create(object clone)

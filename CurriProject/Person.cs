@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace CurriProject
 {
+    // 기본적인 정보를 담고있는 객체
     class Person
     {
         public const int LIMIT_STUDENT_NUMBER = 2008000000; // 08학번부터 이용가능
-        String major; 
-        String track; 
-        int studentNum;
-        String name;
+        String major; // 전공
+        String track;  // 트랙
+        int studentNum; // 학번
+        String name; // 이름
+
         /*********** 읽기 전용 프로퍼티 ***********/
 
         public String Major{
