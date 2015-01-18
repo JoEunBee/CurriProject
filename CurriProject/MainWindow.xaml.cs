@@ -23,6 +23,10 @@ namespace CurriProject
         public MainWindow()
         {
             InitializeComponent();
+
+            Person ex = new Person();
+
         }
+
     }
 }
