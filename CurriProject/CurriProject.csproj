@@ -56,9 +56,9 @@
     <Compile Include="Controller.cs" />
     <Compile Include="MyError.cs" />
     <Compile Include="programView.cs" />
-    <Compile Include="Requirement.cs" />
-    <Compile Include="RequirementData.cs" />
-    <Compile Include="Subject.cs" />
+    <Compile Include="Requirement\Requirement.cs" />
+    <Compile Include="Requirement\RequirementData.cs" />
+    <Compile Include="Requirement\Subject.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,9 +73,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonFactory.cs" />
-    <Compile Include="Person_Computer.cs" />
+    <Compile Include="Person\Person.cs" />
+    <Compile Include="Person\PersonFactory.cs" />
+    <Compile Include="Person\Person_Computer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

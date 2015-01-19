@@ -9,6 +9,12 @@ namespace CurriProject
     // 컴퓨터 공학부를 재학중인 학생 객체
     class Person_Computer : Person
     {
+        const int MAX_GRADE = 4;
+        Requirement requirement;
 
+        public Person_Computer() : base()
+        {
+
+        }
     }
 }
