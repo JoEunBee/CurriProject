@@ -24,7 +24,20 @@ namespace CurriProject
         {
             InitializeComponent();
 
-            Person ex = new Person();
+            Controller controller = new Controller();
+
+            /* 사용자 입력 */
+            String major = "컴퓨터공학과";
+            String track = "H/W";
+            int studentNum = 2013136134;
+            String name = "최준혁";
+
+
+            Person person = new Person(major,track,studentNum,name);
+
+            PersonFactory.create(person);
+
+            controller.add(person);
 
         }
 
