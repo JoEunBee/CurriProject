@@ -35,7 +35,5 @@ namespace CurriProject
             users.Add(clone);
         }
 
-       
-
     }
 }

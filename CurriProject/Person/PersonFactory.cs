@@ -13,7 +13,7 @@ namespace CurriProject
         public static void create(Person instance)
         {   
            // 컴퓨터 공학과 학생인 경우
-            if (instance.Major == "컴퓨터공학과")
+            if (instance.Major == "Computer")
             {
                 instance = new Person_Computer(instance);
                 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ instance에 이수요건 삽입 필요
