@@ -12,9 +12,10 @@ namespace CurriProject
         const int MAX_GRADE = 4;
         Requirement requirement;
 
-        public Person_Computer() : base()
+        public Person_Computer(Person instance) 
+            : base(instance.Major, instance.Track, instance.StudentNum, instance.Name)
         {
-
+            requirement = new Requirement();
         }
     }
 }
