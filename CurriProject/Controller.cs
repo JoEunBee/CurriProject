@@ -8,9 +8,9 @@ namespace CurriProject
 {
     class Controller
     {
-        List<Person> bookmark;
-        programView painter;
-        RequirementData updater;
+        List<Person> users; // 사용자 정보를 담아놓는 배열
+        programView painter;  // 화면에 그려주는 객체
+        RequirementData updater; // 이수요건을 관리하는 객체
 
         public Controller() 
         {
@@ -21,19 +21,21 @@ namespace CurriProject
                 Console.WriteLine("객체 제한 갯수 초과");
             }
 
-            bookmark = new List<Person>();
+            users = new List<Person>();
             updater = new RequirementData();
         }
 
-        public List<Person> Bookmark
+        public List<Person> Users
         {
             get;
         }
 
         public void add(Person clone)
         {
-            bookmark.Add(clone);
+            users.Add(clone);
         }
+
+       
 
     }
 }

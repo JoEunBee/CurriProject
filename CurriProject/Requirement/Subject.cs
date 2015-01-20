@@ -12,6 +12,7 @@ namespace CurriProject
         String name; // 과목 이름
         int credit; // 학점
         int grade; // 학년
+        int semester; // 학기
         String kind; // 분류
         Boolean need; // 필수여부
 
@@ -21,22 +22,22 @@ namespace CurriProject
         {
             get { return this.name; }
         }
-
         public int Credit
         {
             get { return this.credit; }
         }
-
         public int Grade
         {
             get { return this.grade; }
         }
-
+        public int Semester
+        {
+            get { return this.semester; }
+        }
         public String Kind
         {
             get { return this.kind; }
         }
-
         public Boolean Need
         {
             get { return this.need; }
@@ -45,7 +46,7 @@ namespace CurriProject
         /******************************************/
 
         // 생성자
-        public Subject(String name, int credit, int grade, String kind, Boolean need)
+        public Subject(String name, int credit, int grade,int semester , String kind, Boolean need)
         {
             if (name == null || kind == null || need == null || credit < 0 || grade < 0 || grade > 4)
             {
@@ -56,6 +57,7 @@ namespace CurriProject
                 this.name = name;
                 this.credit = credit;
                 this.grade = grade;
+                this.semester = semester;
                 this.kind = kind;
                 this.need = need;
             }

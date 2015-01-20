@@ -20,17 +20,14 @@ namespace CurriProject
         public String Major{
             get{ return this.major; }
         }
-
         public String Track
         {
             get { return this.track; }
         }
-
         public int StudentNum
         {
             get { return this.studentNum; }
         }
-
         public String Name
         {
             get { return this.Name; }
