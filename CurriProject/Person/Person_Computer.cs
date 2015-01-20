@@ -12,9 +12,5 @@ namespace CurriProject
         const int MAX_GRADE = 4;
         Requirement requirement;
 
-        public Person_Computer() : base()
-        {
-
-        }
     }
 }
