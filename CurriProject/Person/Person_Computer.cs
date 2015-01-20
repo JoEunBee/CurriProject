@@ -10,7 +10,15 @@ namespace CurriProject
     class Person_Computer : Person
     {
         const int MAX_GRADE = 4;
-        Requirement requirement;
+        Requirement[] requirement;
 
+        // 생성자
+        public Person_Computer(Person clone)
+            : base(clone.Major, clone.Track, clone.StudentNum, clone.Name)
+        {
+            // 4학년까지의 과목
+            requirement = new Requirement[MAX_GRADE];
+        }
     }
+
 }

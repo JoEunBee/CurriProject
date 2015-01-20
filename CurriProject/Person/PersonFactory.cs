@@ -9,29 +9,15 @@ namespace CurriProject
     // 입력한 Person정보에 맞게 형변환을 해주는 객체
     class PersonFactory
     {
-        public static object create(object clone)
-        {
-            Person instance = new Person("", "", Person.LIMIT_STUDENT_NUMBER+1, ""); // Person 객체 생성
-
-            // clone이 Person 객체형식인 경우
-            if ( clone.GetType() == instance.GetType() )
+        // Person객체를 학과,트랙에 맞게 형변환해주는 메서드
+        public static void create(Person instance)
+        {   
+           // 컴퓨터 공학과 학생인 경우
+            if (instance.Major == "Computer")
             {
-                instance = (Person) clone;
-                
-                // 컴퓨터 공학과 학생인 경우
-                if (instance.Major == "Computer")
-                {  
-                    instance = new Person_Computer(instance);
-                }
-
-                // 생성된 인스턴스 반환
-                return instance;
+                instance = new Person_Computer(instance);
+                // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ instance에 이수요건 삽입 필요
             }
-
-            // clone이 Person 객체형식이 아닌 경우
-            else
-                return null;
-            
         }
     }
 }

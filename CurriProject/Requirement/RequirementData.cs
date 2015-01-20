@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace CurriProject
 {
-    // 이수요건 객체를 Load 및 Update해주는 객체
+    // 이수요건 관리 객체
     class RequirementData
     {
         List<Requirement> observers;
+
+        /*********** 읽기 전용 프로퍼티 ***********/
 
         public List<Requirement> Observers
         {
             get;
         }
+
+        /******************************************/
 
         public void add(Requirement clone)
         {

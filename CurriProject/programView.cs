@@ -10,10 +10,11 @@ namespace CurriProject
     class programView
     {
         public static programView progView;
-        private programView()
-        {
-        }
 
+        // 생성자
+        private programView() { }
+
+        // 싱글턴 생성
         public static programView create()
         {
             if (progView == null)
